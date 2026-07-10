@@ -206,14 +206,15 @@
             <ul>
                 <li><strong>While typing</strong> — brewery, beer, or spirit name suggestions as you enter text in the log-moment form</li>
                 <li><strong>Label barcodes</strong> — when you add a label photo, a detected EAN barcode may be sent to look up producer and product name suggestions</li>
+                <li><strong>Menu or shelf scan (optional refinement)</strong> — after on-device matching, text detected from a list or shelf line (not the photo) may be sent to the same catalogs above to suggest clearer producer or product names</li>
             </ul>
             <p>Services used:</p>
             <ul>
                 <li><strong>Open Brewery DB</strong> — brewery name suggestions</li>
-                <li><strong>Open Food Facts</strong> — spirit name suggestions and barcode product lookup</li>
+                <li><strong>Open Food Facts</strong> — spirit and wine name suggestions, plus barcode product lookup</li>
                 <li><strong>Sample APIs</strong> — beer name suggestions</li>
             </ul>
-            <p>These requests contain only your search term or barcode digits. They do <strong>not</strong> include your identity, photos, other memories, your taste profile, or any account information. We do not receive or store these queries. Each service has its own privacy practices; please review their policies (for example, <a href="https://world.openfoodfacts.org/privacy" target="_blank">Open Food Facts</a>). You can avoid these requests by staying offline or not using autocomplete and barcode prefill.</p>
+            <p>These requests contain only your search term, detected line text, or barcode digits. They do <strong>not</strong> include your identity, photos, other memories, your taste profile, or any account information. Matching against your saved moments and on-device taste profile does not use these services. We do not receive or store these queries. Each service has its own privacy practices; please review their policies (for example, <a href="https://world.openfoodfacts.org/privacy" target="_blank">Open Food Facts</a>). You can avoid these requests by staying offline or not using autocomplete, barcode prefill, or scan name refinement.</p>
 
             <h2>Information we do NOT collect</h2>
             <ul>
