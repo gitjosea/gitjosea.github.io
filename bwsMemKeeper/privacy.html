@@ -153,7 +153,7 @@
             <div class="app-icon-placeholder">bws</div>
             <h1>bwsMemKeeper</h1>
             <div class="effective-date">Privacy Policy</div>
-            <div class="effective-date" style="margin-top: 4px;">Effective Date: May 2026</div>
+            <div class="effective-date" style="margin-top: 4px;">Effective Date: July 2026</div>
         </header>
 
         <main class="card">
@@ -170,6 +170,7 @@
                 <li>Personal notes about the moment and the people you were with</li>
                 <li>Dates</li>
                 <li>Photos you take or choose from your photo library</li>
+                <li>Ingredient label links or barcodes detected from label photos (stored with the moment)</li>
             </ul>
             <p>You enter this information yourself. It is stored to help the app function as a personal journal.</p>
 
@@ -177,6 +178,15 @@
             <p><strong>On your device.</strong> Your memories are stored locally on your device.</p>
             <p><strong>In your iCloud account (Apple).</strong> If you are signed into iCloud and have iCloud enabled, the app uses Apple's CloudKit to store your memories in <strong>your own private iCloud database</strong>. This keeps your data backed up and in sync across your devices and lets it transfer to a new device. This data resides in your personal iCloud account, governed by <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>. <strong>We have no access to your iCloud data and cannot read, retrieve, or share it.</strong> If you are not signed into iCloud, the app simply stores your data locally.</p>
             <p>We do not operate our own servers and never receive a copy of your memories.</p>
+
+            <h2>On-device features (no network)</h2>
+            <p>The following work entirely on your device and do not send your library, photos, or taste profile to us or to third parties:</p>
+            <ul>
+                <li><strong>Your taste</strong> — palate patterns derived from your logged moments</li>
+                <li><strong>Scan a menu</strong> — matching menu or shelf text against your saved moments and on-device taste profile</li>
+                <li><strong>Label text recognition</strong> — reading words from label photos to prefill fields</li>
+                <li><strong>QR codes on labels</strong> — decoding an ingredient-info link on the device; opening the link uses your browser</li>
+            </ul>
 
             <h2>Camera and photo library</h2>
             <p>If you choose to add a photo, the app requests access to your camera and/or photo library. Photos you add are stored with your memories (on your device and, if enabled, in your private iCloud database). The app accesses your camera and photo library only when you actively add a photo, and only for that purpose.</p>
@@ -191,14 +201,19 @@
             <h2>App Lock (Face ID / Touch ID / passcode)</h2>
             <p>You can optionally require Face ID, Touch ID, or your device passcode to open the app. This uses Apple's on-device authentication. We never see, collect, or store your biometric information; authentication is handled entirely by your device and Apple's system, which only tells the app whether authentication succeeded.</p>
 
-            <h2>Third-party lookups (autocomplete suggestions)</h2>
-            <p>To help you fill in fields, the app can offer suggestions while you type a brewery, beer, or spirit name. When you use these suggestions, the app sends <strong>only the text you typed</strong> (your search term) over a secure (HTTPS) connection to the following third-party services to retrieve matching results:</p>
+            <h2>Optional online lookups</h2>
+            <p>To help prefill beverage names, the app may send short requests over a secure (HTTPS) connection to third-party catalogs <strong>only when you are online</strong> and use these features:</p>
+            <ul>
+                <li><strong>While typing</strong> — brewery, beer, or spirit name suggestions as you enter text in the log-moment form</li>
+                <li><strong>Label barcodes</strong> — when you add a label photo, a detected EAN barcode may be sent to look up producer and product name suggestions</li>
+            </ul>
+            <p>Services used:</p>
             <ul>
                 <li><strong>Open Brewery DB</strong> — brewery name suggestions</li>
-                <li><strong>Open Food Facts</strong> — spirit name suggestions</li>
+                <li><strong>Open Food Facts</strong> — spirit name suggestions and barcode product lookup</li>
                 <li><strong>Sample APIs</strong> — beer name suggestions</li>
             </ul>
-            <p>These requests contain only your search query. They do <strong>not</strong> include your identity, your other memories, your photos, or any personal account information. Each service has its own privacy practices; please review their policies (for example, <a href="https://world.openfoodfacts.org/privacy" target="_blank">Open Food Facts</a>). You can avoid these requests by not using the autocomplete suggestions.</p>
+            <p>These requests contain only your search term or barcode digits. They do <strong>not</strong> include your identity, photos, other memories, your taste profile, or any account information. We do not receive or store these queries. Each service has its own privacy practices; please review their policies (for example, <a href="https://world.openfoodfacts.org/privacy" target="_blank">Open Food Facts</a>). You can avoid these requests by staying offline or not using autocomplete and barcode prefill.</p>
 
             <h2>Information we do NOT collect</h2>
             <ul>
@@ -212,7 +227,7 @@
             <p>Because your data lives on your device and in your own iCloud account, you control it. You can delete individual memories in the app (including emptying the Recycle Bin), delete any backup files you created, and remove all app data by deleting the app and clearing its iCloud data through your device's iCloud settings. Deleting the app does not automatically remove data already stored in your iCloud account; you can manage that in your device's Settings.</p>
 
             <h2>Security</h2>
-            <p>We use reasonable, industry-standard measures to protect your information, including encrypted (HTTPS) network connections for lookups, optional password-based encryption for exported backups, and the option to lock the app with biometrics or your passcode. Data stored in iCloud is protected by Apple's security. No method of storage or transmission is completely secure, but we do not maintain any servers that hold your memories.</p>
+            <p>We use reasonable, industry-standard measures to protect your information, including encrypted (HTTPS) network connections for lookups, optional password-based encryption for exported backups, and the option to lock the app with biometrics or your passcode. Data stored in iCloud is protected by Apple's security. Imported ingredient links from shared moment files always show a URL preview before opening. No method of storage or transmission is completely secure, but we do not maintain any servers that hold your memories.</p>
 
             <h2>Children's privacy</h2>
             <p>The app is intended for users of legal drinking age in their jurisdiction and is not directed to children. We do not knowingly collect personal information from children.</p>
