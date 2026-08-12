@@ -153,7 +153,7 @@
             <div class="app-icon-placeholder">bws</div>
             <h1>bwsMemKeeper</h1>
             <div class="effective-date">Privacy Policy</div>
-            <div class="effective-date" style="margin-top: 4px;">Effective Date: July 2026</div>
+            <div class="effective-date" style="margin-top: 4px;">Effective Date: August 2026</div>
         </header>
 
         <main class="card">
@@ -168,6 +168,8 @@
             <ul>
                 <li>Beverage details (name, producer/brewery/winery, type, vintage or age, style, region, country, grape, color/appearance, aroma, taste, food pairings)</li>
                 <li>Personal notes about the moment and the people you were with</li>
+                <li>Optional place details for where you tasted (a name you type, or a nearby place name and short address you select)</li>
+                <li>Optional coordinates for a nearby place you select (stored with that moment only)</li>
                 <li>Dates</li>
                 <li>Photos you take or choose from your photo library</li>
                 <li>Ingredient label links or barcodes detected from label photos (stored with the moment)</li>
@@ -189,6 +191,15 @@
                 <li><strong>Share cards</strong> — optional images you create on device for Your taste, Collection insights, or a Scan verdict (bucket counts and a few names only; a Scan verdict never includes the menu or shelf photo). Shared only when you use the system share sheet</li>
                 <li><strong>Label text recognition</strong> — reading words from label photos to prefill fields</li>
                 <li><strong>QR codes on labels</strong> — decoding an ingredient-info link on the device; opening the link uses your browser</li>
+            </ul>
+
+            <h2>Location</h2>
+            <p>Location access is <strong>optional</strong> and used only for the <strong>Find nearby</strong> control when logging a moment. The app requests <strong>When In Use</strong> permission (not Always or background location).</p>
+            <ul>
+                <li>Tapping Find nearby takes a one-shot location reading on your device and searches nearby points of interest through Apple MapKit.</li>
+                <li>You can skip Find nearby and type a custom place name instead. Typing a custom name does not require location permission.</li>
+                <li>If you pick a suggested place, the app may store the place name, a short address, and coordinates with that moment on your device and, if enabled, in your private iCloud database — the same way other moment fields are stored.</li>
+                <li>We do not operate a place database, do not track your movements, and do not receive your location. MapKit search uses Apple’s maps services under <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple’s Privacy Policy</a>.</li>
             </ul>
 
             <h2>Camera and photo library</h2>
